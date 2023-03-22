@@ -1,5 +1,6 @@
 // ** Next Import
 import Link from 'next/link'
+import Icon from 'src/@core/components/icon'
 
 // ** MUI Imports
 import Box from '@mui/material/Box'
@@ -31,30 +32,15 @@ const TableHeader = (props: TableHeaderProps) => {
         justifyContent: 'space-between'
       }}
     >
-      <Select
-        size='small'
-        displayEmpty
-        defaultValue=''
-        sx={{ mr: 4, mb: 2 }}
-        disabled={selectedRows && selectedRows.length === 0}
-        renderValue={selected => (selected.length === 0 ? 'Actions' : selected)}
-      >
-        <MenuItem disabled>Actions</MenuItem>
-        <MenuItem value='Delete'>Delete</MenuItem>
-        <MenuItem value='Edit'>Edit</MenuItem>
-        <MenuItem value='Send'>Send</MenuItem>
-      </Select>
+      
       <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
         <TextField
           size='small'
           value={value}
-          placeholder='Search Invoice'
-          sx={{ mr: 4, mb: 2, maxWidth: '180px' }}
+          placeholder='Buscar Nóminas'
+          sx={{ mr: 4, mb: 2, maxWidth: '280px' }}
           onChange={e => handleFilter(e.target.value)}
         />
-        <Button sx={{ mb: 2 }} component={Link} variant='contained' href='/apps/invoice/add'>
-         f
-        </Button>
       </Box>
     </Box>
   )

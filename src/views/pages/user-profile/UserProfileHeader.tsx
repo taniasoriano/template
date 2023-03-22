@@ -93,13 +93,11 @@ const UserProfileHeader = () => {
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', '& svg': { mr: 1, color: 'text.secondary' } }}>
                 <Icon icon='mdi:calendar-blank-outline' />
-                <Typography sx={{ color: 'text.secondary', fontWeight: 600 }}>Joined {data.joiningDate}</Typography>
+                <Typography sx={{ color: 'text.secondary', fontWeight: 600 }}> {data.joiningDate}</Typography>
               </Box>
             </Box>
           </Box>
-          <Button variant='contained' startIcon={<Icon icon='mdi:account-check-outline' fontSize={20} />}>
-            Connected
-          </Button>
+          
         </Box>
       </CardContent>
     </Card>

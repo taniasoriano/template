@@ -101,7 +101,7 @@ const TabConnections = () => {
           <CardHeader title='Connected Accounts' />
           <CardContent>
             <Typography sx={{ mb: 4, color: 'text.secondary' }}>
-              Display content from your connected accounts on your site
+              Display content from youraccounts on your site
             </Typography>
 
             {connectedAccountsArr.map(account => {

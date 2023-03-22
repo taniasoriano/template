@@ -38,13 +38,13 @@ const TableHeaderSolicitud = (props: TableHeaderProps) => {
         displayEmpty
         defaultValue=''
         sx={{ mr: 4, mb: 2 }}
-        
-        renderValue={selected => (selected.length === 0 ? 'Actions' : selected)}
+        disabled={selectedRows && selectedRows.length === 0}
+        renderValue={selected => (selected.length === 0 ? 'Acciones' : selected)}
       >
-        <MenuItem >Actions</MenuItem>
-        <MenuItem value='Delete'>Delete</MenuItem>
-        <MenuItem value='Edit'>Edit</MenuItem>
-        <MenuItem value='Send'>Send</MenuItem>
+        <MenuItem value=''>---</MenuItem>
+        <MenuItem value='Eliminar'>Eliminar</MenuItem>
+        <MenuItem value='Editar'>Editar</MenuItem>
+        <MenuItem value='Enviar'>Enviar</MenuItem>
       </Select>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
         <TextField
@@ -62,9 +62,10 @@ const TableHeaderSolicitud = (props: TableHeaderProps) => {
         
         renderValue={selected => (selected.length === 0 ? 'Solicitudes' : selected)}
       >
+        <MenuItem value='' >---</MenuItem>
         <MenuItem value='Baja' >Solicitud de Baja</MenuItem>
-        <MenuItem value='Bajas'>Solicitud de Bajas</MenuItem>
-        <MenuItem value='Bajax'>Solicitud de Bajax</MenuItem>
+        <MenuItem value='Alta'>Solicitud de Alta</MenuItem>
+        <MenuItem value='Datos'>Variación de Datos</MenuItem>
       </Select>
         
       </Box>

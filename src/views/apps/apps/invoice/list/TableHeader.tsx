@@ -39,7 +39,7 @@ const TableHeader = (props: TableHeaderProps) => {
         disabled={selectedRows && selectedRows.length === 0}
         renderValue={selected => (selected.length === 0 ? 'Actions' : selected)}
       >
-        <MenuItem disabled>Actions</MenuItem>
+        <MenuItem >Actions</MenuItem>
         <MenuItem value='Delete'>Delete</MenuItem>
         <MenuItem value='Edit'>Edit</MenuItem>
         <MenuItem value='Send'>Send</MenuItem>
