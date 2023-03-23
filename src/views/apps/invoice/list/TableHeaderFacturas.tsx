@@ -1,14 +1,15 @@
 // ** Next Import
 import Link from 'next/link'
-import Icon from 'src/@core/components/icon'
+import Grid from '@mui/material/Grid'
+import Typography from '@mui/material/Typography'
 
 // ** MUI Imports
 import Box from '@mui/material/Box'
-import Button from '@mui/material/Button'
 import Select from '@mui/material/Select'
 import { GridRowId } from '@mui/x-data-grid'
 import MenuItem from '@mui/material/MenuItem'
 import TextField from '@mui/material/TextField'
+import ButtonGroupSplit from 'src/views/components/button-group/ButtonGroupSplit'
 
 interface TableHeaderProps {
   value: string
@@ -16,7 +17,7 @@ interface TableHeaderProps {
   handleFilter: (val: string) => void
 }
 
-const TableHeader = (props: TableHeaderProps) => {
+const TableHeaderFacturas = (props: TableHeaderProps) => {
   // ** Props
   const { value, selectedRows, handleFilter } = props
 
@@ -37,7 +38,7 @@ const TableHeader = (props: TableHeaderProps) => {
         <TextField
           size='small'
           value={value}
-          placeholder='Buscar Nóminas'
+          placeholder='Buscar Facturas'
           sx={{ mr: 4, mb: 2, maxWidth: '400px' }}
           onChange={e => handleFilter(e.target.value)}
         />     
@@ -59,4 +60,4 @@ const TableHeader = (props: TableHeaderProps) => {
   )
 }
 
-export default TableHeader
+export default TableHeaderFacturas

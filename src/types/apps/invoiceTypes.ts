@@ -14,6 +14,7 @@ export type InvoiceClientType = {
 }
 
 export type InvoiceType = {
+  social: string | number
   id: number
   name: string
   total: number
@@ -28,8 +29,8 @@ export type InvoiceType = {
   issuedDate: string
   companyEmail: string
   balance: string | number
-  invoiceStatus: InvoiceStatus
-  ss: string
+  invoiceStatus: InvoiceStatus | string
+  socialStatus: InvoiceStatus
 }
 
 export type InvoicePaymentType = {

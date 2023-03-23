@@ -27,7 +27,8 @@ const data: { invoices: InvoiceType[] } = {
       avatarColor: 'primary',
       invoiceStatus: 'tparcial',
       balance: 'Temporal Parcial',
-      ss: 'Completo',
+      socialStatus: 'completo',
+      social:'solicitado',
       dueDate: `23 ${currentMonth} ${now.getFullYear()}`
 
     },
@@ -45,7 +46,8 @@ const data: { invoices: InvoiceType[] } = {
       avatar: '/images/avatars/1.png',
       invoiceStatus: 'iparcial',
       balance: 'Indefinido Parcial',
-      ss: 'A la espera de la SS',
+      socialStatus: 'espera',
+      social:'solicitado',
       dueDate: `15 ${currentMonth} ${now.getFullYear()}`
     },
     {
@@ -62,7 +64,8 @@ const data: { invoices: InvoiceType[] } = {
       avatar: '/images/avatars/2.png',
       invoiceStatus: 'icompleto',
       balance: 'Indefinido Completo',
-      ss: 'Completo',
+      socialStatus: 'completo',
+      social:'solicitado',
       dueDate: `03 ${currentMonth} ${now.getFullYear()}`
     },
     {
@@ -79,7 +82,8 @@ const data: { invoices: InvoiceType[] } = {
       avatar: '/images/avatars/3.png',
       invoiceStatus: 'tcompleto',
       balance: 'Temporal Completo',
-      ss: 'Solicitado',
+      socialStatus: 'solicitado',
+      social:'solicitado',
       dueDate: `11 ${currentMonth} ${now.getFullYear()}`
     },
     {
@@ -96,7 +100,8 @@ const data: { invoices: InvoiceType[] } = {
       avatar: '/images/avatars/4.png',
       invoiceStatus: 'tcompleto',
       balance: 'Temporal Completo',
-      ss: 'En trámite',
+      socialStatus: 'tramite',
+      social:'solicitado',
       dueDate: `30 ${currentMonth} ${now.getFullYear()}`
     },
     {
@@ -114,7 +119,8 @@ const data: { invoices: InvoiceType[] } = {
       avatarColor: 'secondary',
       invoiceStatus: 'tparcial',
       balance: 'Temporal Parcial',
-      ss: 'Solicitado',
+      socialStatus: 'solicitado',
+      social:'solicitado',
       dueDate: `24 ${currentMonth} ${now.getFullYear()}`
     },
     {
@@ -132,7 +138,8 @@ const data: { invoices: InvoiceType[] } = {
       avatarColor: 'success',
       invoiceStatus: 'icompleto',
       balance: 'Indefinido Completo',
-      ss: 'Completo',
+      socialStatus: 'completo',
+      social:'solicitado',
       dueDate: `22 ${currentMonth} ${now.getFullYear()}`
     },
     {
@@ -148,8 +155,9 @@ const data: { invoices: InvoiceType[] } = {
       total: 4309,
       avatar: '/images/avatars/5.png',
       invoiceStatus: 'icompleto',
-      ss: 'Completo',
       balance: 'Indefinido Completo',
+      socialStatus: 'completo',
+      social:'solicitado',
       dueDate: `10 ${currentMonth} ${now.getFullYear()}`
     },
     {
@@ -166,7 +174,8 @@ const data: { invoices: InvoiceType[] } = {
       avatar: '/images/avatars/6.png',
       invoiceStatus: 'icompleto',
       balance: 'Indefinido Completo',
-      ss: 'Solicitado',
+      socialStatus: 'solicitado',
+      social:'solicitado',
       dueDate: `24 ${currentMonth} ${now.getFullYear()}`
     },
     {
@@ -181,9 +190,10 @@ const data: { invoices: InvoiceType[] } = {
       service: 'Software Development',
       total: 4776,
       avatar: '/images/avatars/7.png',
-      invoiceStatus: 'tparcial',
+      invoiceStatus: 'tparcial' ,
       balance: 'Temporal Parcial',
-      ss: 'En trámite',
+      socialStatus: 'completo',
+      social:'solicitado',
       dueDate: `02 ${currentMonth} ${now.getFullYear()}`
     },
     // {

@@ -147,12 +147,12 @@ const defaultColumns = [
   {
     flex: 0.1,
     minWidth: 90,
-    field: 'ss',
+    field: 'balance',
     headerName: 'estado',
     renderCell: ({ row }: CellType) => {
       return row.balance !== 0 ? (
         <Typography variant='body2' sx={{ color: 'text.primary' }}>
-          {row.ss}
+          {row.balance}
         </Typography>
       ) : (
         <CustomChip size='small' skin='light' color='success' label='Paid' />
@@ -244,7 +244,7 @@ const InvoiceList = () => {
                       labelId='invoice-status-select'
                     >
                       <MenuItem value=''>---</MenuItem>
-                      <MenuItem value='soliciado'>Solicitado</MenuItem>
+                      <MenuItem value='solicitado'>Solicitado</MenuItem>
                       <MenuItem value='completo'>Completo</MenuItem>
                       <MenuItem value='tramite'>En trámite</MenuItem>
                       <MenuItem value='espera'>A espera de la Seguridad Social</MenuItem>

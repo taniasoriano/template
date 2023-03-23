@@ -29,6 +29,7 @@ const navigation = (): VerticalNavItemsType => {
       icon: "prime:align-justify",
       path: '/apps/invoice/solicitudes' 
     },
+  
     {
       sectionTitle: 'Servicios'
     },
